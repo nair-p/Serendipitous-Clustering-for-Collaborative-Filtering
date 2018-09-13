@@ -57,27 +57,14 @@ for i in range(num_iter):
 centroids2 =output_spp_para["Centroids"]
 labels2 = output_spp_para["Labels"]
 
+with open('../data/centroids_20.pickle', 'wb') as handle:
+	pickle.dump(centroids2, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+with open('../data/labels_20.pickle', 'wb') as handle:
+	pickle.dump(labels2, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
 #print(centroids2)
 #print(labels2)
-
-
-'''
-cmap = plt.get_cmap('gnuplot')
-colors = [cmap(i) for i in np.linspace(0, 1, k)]
-print colors
-
-#print data[[3,4,5], :][:,0]
-print data[[0,1,2],:][:,0]
-#print data[labels1==1, :][:,0]
-for i,color in enumerate(colors,start =1):
-    plt.scatter(data[labels1==i, :][:,0], data[labels1==i, :][:,1], color=color)
-    plt.axis([0, 110, 0, 110])
-
-for j in range(k):
-    plt.scatter(centroids1[j,0],centroids1[j,1],color = 'k',marker='x')
-
-plt.show()
-'''
 
 
 print("")

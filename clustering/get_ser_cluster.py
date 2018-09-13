@@ -11,11 +11,11 @@ from distance_func import distance
 
 
 # open the cluster centers obtained after conventional clustering carried out before this
-with open('centroids_half_400.pickle', 'rb') as handle:
+with open('../data/centroids_half_400.pickle', 'rb') as handle:
 	centers = pickle.load(handle)
 
 # open the cluster label for each user obtained after conventional clustering carried out before this 
-with open('labels_half_400.pickle', 'rb') as handle:
+with open('../data/labels_half_400.pickle', 'rb') as handle:
 	labels = pickle.load(handle)
 
 with open('../data/user_rating_norm.pickle', 'rb') as handle:
