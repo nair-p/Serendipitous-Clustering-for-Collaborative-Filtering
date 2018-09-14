@@ -1,6 +1,6 @@
 # Serendipitous-Clustering-for-Collaborative-Filtering
 
-This repository contains the implementation of SC-CF (Serendipitous Clustering for Collaborative Filtering) as described in the paper [Scalable Clustering Algorithm for Collaborative Filtering](https://google.com) **Paper is under camera ready revision and link to the paper will be updates here soon.
+This repository contains the implementation of SC-CF (Serendipitous Clustering for Collaborative Filtering) as described in the paper [Scalable Clustering Algorithm for Collaborative Filtering](https://google.com) **Paper is under camera ready revision and link to the paper will be updated here soon.**
 
 SC-CF is a clustering based algorithm that introduces the notion of "serendipity" in recommender systems. It employs a Scalable Spherical KMeans Plus Plus algorithm for carrying out clustering in the Collaborative Filtering part of the algorithm. The implementation assumes the dataset under consideration as [Serendipity 2018](https://grouplens.org/datasets/serendipity-2018/) which includes user-rating information for Movies provided by [MovieLens](https://movielens.org/). The codes for clustering can be used for any other dataset that is in the matrix format of data points.
 
